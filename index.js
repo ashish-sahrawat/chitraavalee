@@ -7,7 +7,8 @@ const { albumController } = require('./controllers/albumController');
 const { postController } = require('./controllers/postController');
 var mongoose = require('mongoose');
 
-var db = 'mongodb://localhost/chitraavalee';
+
+var db = 'mongodb+srv://chitra:vaalee@chitraavalee.irbqd.mongodb.net/chitraavalee?retryWrites=true&w=majority'
 
 
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }, function (error) {
