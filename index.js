@@ -81,7 +81,7 @@ app.get('/*', function (req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-
-app.listen(7814, function () {
+let port = process.env.PORT || 7814;
+app.listen(port, function () {
     console.log('ChitraaValee started');
 });
